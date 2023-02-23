@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 3</title>
+        <style>
+            html {
+                background-color: #80c6ff;
+                color: black;
+                height: 100%;
+            }
+
+            .container-main {
+                height: auto;
+                width: auto;
+                padding: 15px;
+                margin: 15px;
+                color: black;
+                background-color: beige;
+                border-radius: 15px;
+                border-color: #000000;
+                box-shadow: 10px 5px 5px rgb(81, 81, 81);;
+            }
+
+            .container-header {
+                height: auto;
+                font-size: 20px;
+                width: 90%;
+                padding: 15px;
+                margin: 15px;
+            }
+
+            .img-size {
+                width: 80%;
+            }
+
+            .text-left {
+                margin: 4px;
+                padding: 4px;
+                text-align: left;
+            }
+
+            .text-center {
+                margin: 4px;
+                padding: 4px;
+                text-align: center;
+            }
+
+            .form-flex {
+                display: flex;
+            }
+
+            .form-label {
+                padding-left: 2px;
+                padding-right: 2px;
+                left: 24px;
+                bottom: 30px;
+                font-size: 10px;
+                line-height: 14px;
+                width: auto;
+                background-color: beige;
+                cursor: pointer;
+                position: absolute;
+            }
+
+            .form-submit {
+                width: 100%;
+                background: dodgerblue;
+                color: #fff;
+                border: #fff;
+                border-radius: 12px;
+                padding: 10px;
+            }
+
+            .form-input {
+                width: 100%;
+                border-color: black;
+                border-radius: 12px;
+                background-color: beige;
+                box-sizing: border-box;
+                font-size: 18px;
+                height: 100%;
+                outline: 1px;
+                padding: 4px 20px 0;
+            }
+
+            .form-section {
+                padding: 8px;
+                position: relative;
+            }
+
+            .footer-class {
+                width: 100%;
+                height: 40px;
+                background: beige;
+                position: absolute;
+                left: 0;
+                text-align: center;
+            }
+
+            .sm-width {
+                width: 20%;
+            }
+
+            .md-width {
+                width: 30%;
+            }
+
+            .lg-width {
+                width: 40%;
+            }
+
+            .txt-area-width {
+                width: 80%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="container-header">
+            <section id="header" class="text-left">
+                <h1>"De a Peso" Survey</h1>
+            </section>
+        </header>
+
+        <main class="container-main">
+            <section id="mainSurvey" class="text-left">
+                <h2>Survey</h2>
+                
+                <p>For the next session we will appreciate if you give us a comment related with our notes.</p>
+
+                <p>Please fill the next form to continue with the process.</p>
+
+                <hr>
+                
+                <section id="sectionForm">
+                    <form action="" method="post">
+                        <section id="name" class="form-flex">
+                            <section id="firstNameSection" class="form-section md-width">
+                                <label for="firstNameInput" class="form-label">First Name:</label>
+
+                                <input id="firstNameInput" type="text" name="firstNameInput" 
+                                    title="First Name" placeholder="First Name" class="form-input">
+                            </section>
+                            
+                            <section id="lastNameSection" class="form-section md-width">
+                                <label for="lastNameInput" class="form-label">Last Name:</label>
+
+                                <input id="lastNameInput" type="text" name="lastNameInput" 
+                                    title="Last Name" placeholder="Last Name" class="form-input">
+                            </section>
+                        </section>
+
+                        <section id="email" class="form-flex">
+                            <section id="emailSection" class="form-section lg-width">
+                                <label for="emailInput" class="form-label">Email:</label>
+
+                                <input id="emailInput" type="email" name="emailInput" 
+                                    title="E-mail" placeholder="E-mail" class="form-input">
+                            </section>
+                        </section>
+
+                        <section id="years" class="form-flex">
+                            <section id="yearsSection" class="form-section lg-width">
+                                <label for="yearsInput" class="form-label">Years:</label>
+
+                                <input id="yearsInput" type="number" name="yearsInput" 
+                                    title="Years" placeholder="Years" class="form-input">
+                            </section>
+                        </section>
+
+                        <section id="civilStatus" class="form-flex">
+                            <section id="civilStatusSection" class="form-section lg-width">
+                                    <label for="civilStatusSelect" class="form-label">Select your civil status:</label>
+
+                                    <select id="civilStatusSelect" name="civilStatusSelect"
+                                        title="Civil Status" class="form-input">
+                                        <option value="">--Please choose an option--</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Divorce">Divorce</option>
+                                        <option value="Widow(er)">Widow(er)</option>
+                                    </select>
+                            </section>
+                        </section>
+
+                        <section id="gender">
+                            <section id="labelForGender">
+                                <label class="form-section">Gender:</label>
+                            </section>
+                            
+                            <section id="genderInput">
+                                <section id="genderSection">
+                                    <section id="genderSectionMale" class="form-section lg-width">
+                                        <input id="genderMale" type="radio" name="gender" 
+                                            title="Male" value="Male" checked>
+                                        <label for="genderMale">Male</label>
+                                    </section>
+
+                                    <section id="genderSectionFemale" class="form-section lg-width">
+                                        <input id="genderFemale" type="radio" name="gender" 
+                                            title="Female" value="Female">
+                                        <label for="genderFemale">Female</label>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section id="labelForComment">
+                            <label for="comentInput" class="form-section">Leave us a comment:</label>
+                        </section>
+
+                        <section id="comment">
+                            <section id="commentSection" class="form-section">
+                                <textarea id="comment" name="textarea" title="Comment Section" 
+                                    rows="10" cols="50" class="txt-area-width">Write something here... </textarea>
+                            </section>
+                        </section>
+
+                        <section id="services">
+                            <section id="labelForServices">
+                                <label for="servicesChbox" class="form-section">Do you accept to receive more surveys like this one?</label>
+                            </section>
+
+                            <section id="servicesInput">
+                                <section id="servicesSection" class="form-section lg-width">
+                                    <label><input id="servicesChbox" type="checkbox" value="accept">I do Accept</label><br>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section id="submit" class="form-flex">
+                            <section id="yearsSection" class="form-section sm-width">
+                                <input id="submitSection" type="button" value="submit" class="form-submit">
+                            </section>
+                        </section>
+                    </form>
+                </section>
+
+            </section>
+        </main>
+
+        <footer class="footer-class">
+            <section>
+                <p>Developed by Andrei Santos for ITK courses.<p>
+            </section>
+        </footer>
+    </body>
+</html>
