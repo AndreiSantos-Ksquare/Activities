@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 6</title>
+        <style>
+            html {
+                display: flex;
+                flex-flow: column;
+                background-color: #aec1d1;
+                color: black;
+                width: 100%;
+                height: 100%;
+            }
+
+            .flex-container-main {
+                display: flex;
+                flex-flow: row nowrap;
+                height: auto;
+                width: auto;
+                padding: 15px;
+                margin: 15px;
+                color: black;
+                background-color: white;
+                border-radius: 15px;
+                border-color: #000000;
+                box-shadow: 10px 5px 5px rgb(81, 81, 81);;
+            }
+
+            .flex-main-side {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                padding: 15px;
+                margin: 15px;
+                color: black;
+            }
+
+            .flex-direction-column-reverse {
+                flex-flow: column-reverse nowrap;
+            }
+
+            .flex-direction-column {
+                justify-content: center;
+                flex-flow: column nowrap;
+            }
+
+            .container-header {
+                height: auto;
+                font-size: 20px;
+                width: 90%;
+                padding: 15px;
+                margin: 15px;
+            }
+
+            .footer-class {
+                width: 100%;
+                background: beige;
+                position: absolute;
+                left: 0;
+                text-align: center;
+            }
+
+            .flex-row {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .flex-column {
+                width: 50%;
+                align-self: baseline;
+                flex-flow: column nowrap;
+            }
+
+            .flex-column-form {
+                display: flex;
+                flex-flow: column nowrap;
+                width: 100%;
+                height: auto;
+                text-align: left;
+            }
+
+            .flex-row-form {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%;
+                height: 100%;
+                text-align: right;
+            }
+
+            .padding-section {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .forgot-button {
+                text-align: right;
+                width: 100%;
+                background: none;
+                color: black;
+            }
+
+            .grey-color {
+                color: #767676;
+            }
+
+            .flex-start {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .flex-end {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .flex-center {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }
+
+            .padding-margin-cero {
+                padding: 0;
+                margin: 0;
+            }
+
+            .padding-margin {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin: 0;
+            }
+
+            .left-side-width {
+                width: 90%;
+            }
+
+            .right-side {
+                width: 90%;
+            }
+
+            .no-border {
+                border: none;
+            }
+
+            .half-width-row {
+                width: 50%;
+            }
+
+            .url-class {
+                padding-left: 5px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+            }
+
+            .signin-button {
+                width: 100%;
+                background: black;
+                color: #fff;
+                border: #fff;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .padding-top-bot {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .img-background {
+                color: white;
+                background-color: #cccccc;
+                background-size: cover;
+                background-image: url("https://i.pinimg.com/474x/d3/2d/3a/d32d3a35eb7f6217516a096a22bcec4b.jpg");
+            }
+
+            .box-right-side {
+                display: flex;
+                padding: 10px;
+                backdrop-filter: blur(5px);
+            }
+
+            .row-message-box {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .padding-left {
+                padding-left: 5px;
+            }
+
+            .left-button {
+                color: white;
+                border: solid;
+                border-color: white;
+                background-color: transparent;
+                border-radius: 100%;
+            }
+            
+            .right-button {
+                left: 30%;
+                color: white;
+                border: solid;
+                border-color: white;
+                background-color: transparent;
+                border-radius: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="container-header">
+            <section id="header" class="text-left">
+                <h1>Activity VI</h1>
+            </section>
+        </header>
+
+        <main class="flex-container-main">
+            <section id="leftSideMain" class="flex-main-side flex-direction-column">
+                <section id="mainForm" class="left-side-width">
+                    <form action="" method="post" class="flex-column-form">
+                        <h2>Welcome back</h2>
+
+                        <p class="grey-color">Welcome back! please enter your details.</p>
+
+                        <section id="email" class="padding-section">
+                            <section id="emailSection" class="flex-column-form">
+                                <label for="emailInput">Email:</label>
+
+                                <input id="emailInput" type="email" name="emailInput" 
+                                    title="E-mail" placeholder="Enter your email" class="no-border">
+                            </section>
+                        </section>
+
+                        <section id="password" class="padding-section">
+                            <section id="passwordSection" class="flex-column-form">
+                                <label for="passwordInput">Password</label>
+
+                                <input id="passwordInput" type="password" name="passwordInput" 
+                                    title="Password" placeholder="" class="no-border">
+                            </section>
+                        </section>
+
+                        <section class="padding-section flex-row-form flex-end">
+                            <section id="remember" class="half-width-row">
+                                <section id="labelForRemember">
+                                    <label for="rememberChbox">Remember for 30 days</label>
+                                </section>
+
+                                <!-- #rememberChbox doesnt show as a Checkbox on the example
+                                so I'm gonna put display none, just to make it look closer
+                                to the original design -->
+                                <section id="rememberInput" style="display: none;">
+                                    <section id="rememberSection">
+                                        <label><input id="rememberChbox" type="checkbox" value="accept"></label><br>
+                                    </section>
+                                </section>
+                            </section>
+                            
+                            <section id="forgot" class="half-width-row">
+                                <section id="forgotSection">
+                                    <input id="forgotPassButton" type="button" value="Forgot password"
+                                        class="forgot-button no-border">
+                                </section>
+                            </section>
+                        </section>
+
+                        <section id="signIn" class="padding-section">
+                            <section id="signInSection">
+                                <input id="signInButton" type="button" value="Sign In"
+                                    class="signin-button">
+                            </section>
+                        </section>
+
+                        <p class="flex-center grey-color">Don't have an account? <a href=""
+                            class="url-class"> Sign up for free</a></p>
+                    </form>
+                </section>
+            </section>
+            <section class="flex-main-side flex-direction-column-reverse img-background">
+                <section id="messageBox" class="right-side box-right-side">
+                    <section>
+                        <h3 class="padding-margin-cero">"Weve been using Untitled to kick start every new project and can't
+                            imagine working without it."</h2>
+
+                        <section class="row-message-box">
+                            <section class="flex-start flex-column">
+                                <h2 class="padding-margin">Andi Lane</h2>
+                                <p class="padding-margin-cero">Founder, Catalog</p>
+                                <p class="padding-margin-cero">Web Design Agency</p>
+                            </section>
+
+                            <section class="flex-end flex-column">
+                                <p>★★★★★</p>
+                                <section id="arrowButtons" class="flex-row">
+                                    <section id="leftButtonSection" class="padding-left">
+                                        <input id="leftButton" type="button" value="<"
+                                            class="left-button">
+                                    </section>
+
+                                    <section id="rightButtonSection" class="padding-left">
+                                        <input id="rightButton" type="button" value=">"
+                                            class="right-button">
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer-reverse">
+            <section>
+            </section>
+        </footer>
+    </body>
+</html>
